@@ -1,0 +1,5 @@
+{#_#_:main cli-repro.core
+ :optimizations :none
+ :target :nodejs
+ :install-deps true
+ :npm-deps {canvas "2.0.0-alpha.12"}}

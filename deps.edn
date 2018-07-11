@@ -1,0 +1,22 @@
+{:override-deps {org.bouncycastle/bctsp-jdk14 {:mvn/version "1.38"}}
+ :deps
+ {org.clojure/clojure {:mvn/version "1.10.0-alpha4"}
+  org.clojure/clojurescript {;; :git/url "https://github.com/clojure/clojurescript"
+                             ;;       :sha
+                             ;;       "616966ca9e94229af128eaf1ff4b54bcb9745c72"
+                              :mvn/version "1.10.339"
+                                   }
+  quil {:mvn/version "2.7.1"
+        :exclusions [bouncycastle/bctsp-jdk14] }
+
+  budding-idea {:local/root "budding_idea"}}
+ :aliases {:simple-dev {:extra-paths ["dev"]
+                        :extra-deps {org.clojure/tools.deps.alpha
+                                     {:git/url "https://github.com/clojure/tools.deps.alpha.git"
+                                      :sha "d492e97259c013ba401c5238842cd3445839d020"}
+                                     org.clojure/tools.namespace {:mvn/version "0.3.0-alpha4"}}
+                        }
+
+          :rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
+                   :main-opts  ["-m" "rebel-readline.main"]} }
+}
