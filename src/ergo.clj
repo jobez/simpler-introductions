@@ -21,9 +21,4 @@
         y    (q/random (q/height))]     ;; Set the y coord randomly within the sketch
     (q/ellipse x y diam diam)))         ;; Draw a circle at x y with the correct diameter
 
-(q/defsketch example                  ;; Define a new sketch named example
-  :title "Oh so many grey circles"    ;; Set the title of the sketch
-  :settings #(q/smooth 2)             ;; Turn on anti-aliasing
-  :setup setup                        ;; Specify the setup fn
-  :draw draw                          ;; Specify the draw fn
-  :size [800 800])                    ;; You struggle to beat the golden ratio
+                    ;; You struggle to beat the golden ratio

@@ -24,5 +24,8 @@ cljs-node-dev:
 prepl-dev:
 	clojure -A:simple-dev -J-Dclojure.server.prepl="{:port 5556 :accept clojure.core.server/io-prepl}"
 
+clj-repl-tooling:
+	clojure -A:simple-dev -J-Dclojure.server.example1="{:port 5555 :accept socket/data-repl}"
+
 compile-node:
 	clojure --main cljs.main --target nodejs --compile canvas.main
