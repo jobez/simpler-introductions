@@ -1,4 +1,4 @@
-{:override-deps {org.bouncycastle/bctsp-jdk14 {:mvn/version "1.38"}}
+{
  :deps
  {org.clojure/clojure {:mvn/version "1.10.0-alpha4"}
   org.clojure/clojurescript {;; :git/url "https://github.com/clojure/clojurescript"
@@ -6,8 +6,7 @@
                              ;;       "616966ca9e94229af128eaf1ff4b54bcb9745c72"
                               :mvn/version "1.10.339"
                                    }
-  quil {:mvn/version "2.7.1"
-        :exclusions [bouncycastle/bctsp-jdk14] }
+
 
   budding-idea {:local/root "budding_idea"}}
  :aliases {:simple-dev {:extra-paths ["dev"]
